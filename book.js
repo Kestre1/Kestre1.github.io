@@ -5,10 +5,14 @@ async function getJSON(filename) {
     return data;
 }
 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomInt(min, max, skip=null) {
+    var number = skip;  // so loop runs once
+    while (skip == number) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	number =  Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    return number;
 }
 
 // MAIN FUNCTION //
@@ -19,15 +23,19 @@ async function get_verse() {
     */
 
     const book = await getJSON('alice.json');
-    console.log(book);
     const verseTag = document.getElementById('verse');
     const citeTag = document.getElementById('citation');
-    // pick random number between 0 and number of book entries
-    const verseIndex = getRandomInt(0,book.length - 1);
+    // get last verse number picked
+    const lastVerseIndex = localStorage['verseIndex'];
+    // pick random number between 0 and number of book entries, excluding last
+    const verseIndex = getRandomInt(0, book.length - 1, skip=lastVerseIndex);
     // set the verse to the one with the chosen index;
     verseTag.innerText = book[verseIndex];
     // set the citation to random numbers
     citation.innerText = getRandomInt(1,9) + ':' + getRandomInt(1,89);
+
+    // cache verse index so it won't be repeated
+    localStorage['verseIndex'] = verseIndex.toString();
 }
     
     
