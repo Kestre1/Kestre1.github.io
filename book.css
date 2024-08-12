@@ -1,0 +1,52 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: #800405;
+    color: #ffe;
+    outline: 6px solid #aa581a;
+    outline-offset: -20px;
+    font-family: Old Standard TT;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Content {
+    width: 75vw;
+    max-width: 750px;
+
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+#Content > p {
+    font-size: 2em;
+    display: inline;
+}
+
+#Content > h3 {
+    font-size: 1.8em;
+}
+
+@media only screen and (max-width: 460px) {
+    body {
+	font-size: 12px;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+	opacity: 0;
+    }
+    50% {
+	opacity: 0;
+    }
+    100% {
+	opacity: 1;
+    }
+}
