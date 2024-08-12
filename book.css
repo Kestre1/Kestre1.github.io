@@ -12,6 +12,7 @@ body {
     font-size: 16px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -31,6 +32,24 @@ body {
 
 #Content > h3 {
     font-size: 1.8em;
+    margin-bottom: 0;
+}
+
+.decor {
+    opacity: 0.5;
+    width: 75vw;
+    max-width: 400px;
+
+    animation-name: fade-in-decor;
+    animation-duration: 1s;
+}
+
+.decor:first-child {
+    margin-bottom: 10px;
+}
+
+.decor:last-child {
+    transform: rotate(180deg);
 }
 
 @media only screen and (max-width: 460px) {
@@ -48,5 +67,17 @@ body {
     }
     100% {
 	opacity: 1;
+    }
+}
+
+@keyframes fade-in-decor {
+    0% {
+	opacity: 0;
+    }
+    10% {
+	opacity: 0;
+    }
+    60% {
+	/* goes to opacity set in main style */
     }
 }
