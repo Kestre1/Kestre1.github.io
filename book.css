@@ -17,6 +17,11 @@ body {
     align-items: center;
 }
 
+body.gay {
+    animation-name: gay-jumpscare;
+    animation-duration: 2s;
+}
+
 #Content {
     width: 75vw;
     max-width: 750px;
@@ -79,5 +84,31 @@ body {
     }
     60% {
 	/* goes to opacity set in main style */
+    }
+}
+
+@keyframes gay-jumpscare {
+    0% {
+	background-color: darkred;
+	outline-color: white;
+    }
+    10% {
+	background-color: red;
+    }
+    24% {
+	background-color: orange;
+    }
+    38% {
+	background-color: yellow;
+    }
+    52% {
+	background-color: green;
+    }
+    66% {
+	background-color: blue;
+    }
+    80% {
+	background-color: purple;
+	outline-color: white;
     }
 }

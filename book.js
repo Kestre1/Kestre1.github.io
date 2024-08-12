@@ -22,7 +22,9 @@ async function get_verse() {
        it in DOM.
     */
 
+    // get JSON
     const book = await getJSON('alice.json');
+    // get DOM elements
     const verseTag = document.getElementById('verse');
     const citeTag = document.getElementById('citation');
     // get last verse number picked
@@ -36,6 +38,13 @@ async function get_verse() {
 
     // cache verse index so it won't be repeated
     localStorage['verseIndex'] = verseIndex.toString();
+
+    // 1 in 50 chance to get a gay background
+    const gayChance = getRandomInt(0, 50);
+    console.log(gayChance);
+    if (gayChance == 24) {
+	document.querySelector('body').classList.add('gay');
+    }
 }
     
     
