@@ -1,4 +1,4 @@
-// HELPER FUNCTIONS //
+// HELPER FUNCTIONSSS //
 async function getJSON(filename) {
     const response = await fetch(filename);
     const data = await response.json();
