@@ -1,0 +1,36 @@
+{
+    "roasted-cauliflower": {
+	"name": "Roasted Cauliflower",
+	"by": "Mom",
+	"stats": {
+	    "dfc": 1,
+	    "inv": 2,
+	    "srv": [
+		5,
+		"Side"
+	    ]
+	},
+	"tags": [
+	    "Veggie",
+	    "Vegan",
+	    "Oven",
+	    "Roasting"
+	],
+	"ingred": [
+	    "1 **Head** White **Cauliflower**",
+	    "Nut _Seed_ Oil",
+	    "Salt [1]"
+	],
+	"instr": [
+	    "Cut the Cauliflower into smaller pieces.",
+	    "Roast in oven until crispy."
+	],
+	"notes": [
+	    "If you don't set a timer, the cauliflower WILL burn. Be warned and chastened!!",
+	    "This is another note just for the heck of it"
+	]
+    },
+    "sunscreen": {
+	"name": "Delicious, Totally Edible Cauliflower Sunscreen"
+    }
+}

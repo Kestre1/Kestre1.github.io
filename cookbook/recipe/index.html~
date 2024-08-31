@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <link rel=stylesheet href="index.css">
+  <title>Recipe</title>
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <script src="../src/recipe-page-index.js"></script>
+</head>
+<body onload="amm_load_recipe()">
+  <div id="Content">
+    <!--BACK BUTTON-->
+    <a href="../" id="Back"></a>
+    <!--MAIN CONTENT-->
+    <h1 id="amm_recipe_name">Rice with Seeds and Spices</h1>
+    <h3>from Mom</h3>
+
+    <div id="Stats">
+      <div>
+	<h4>DIFFICULTY</h4>
+	<p id="dfc-text">1/5 - Simple</p>
+      </div>
+      <div>
+	<h4>INVOLVEDNESS</h4>
+	<p id="inv-text">2/5 - Minimal</p>
+      </div>
+      <div>
+	<h4>SERVES</h4>
+	<p id="srv-text">Side dish for 5</p>
+      </div>
+    </div>
+    
+    <div id="BoxContainer">
+      <div id="IngredientsBox">
+	<h2>Ingredients</h2>
+	<ul id="IngredList">
+	  <li><b>3 Cups </b>Brains</li>
+	  <li><b>1 Megaton</b> Whole Wheat Flour</li>
+	  <li><b>Half</b> of an infected kidney</li>
+	  <li><b>4</b> cucumbers</li>
+	  <li>Persia</li>
+	</ul>
+      </div>
+      <div id="InstructionsBox">
+	<h2>Instructions</h2>
+	<ol id="InstrList">
+	  <li>Preheat oven to 500F.</li>
+	  <li>Chop up brains into kidney-sized pieces. You want to make sure to capture all the juices--this is where all the good stuff is! If your brain was from someone who isn't very smart, feel free to add some math homework or a book on Einstein as well.</li>
+	  <li>Chop up kidney into brain-sized pieces. Yes, it's half a kidney, but do some transfiguration magic to scale it up by about 300%, then cut it down to the size of a kidney.</li>
+	  <li>Call in your shipment of flour. Be sure the flour is premium-grade, and that you aren't causing <em>too</em> bad of a world hunger shortage.</li>
+	  <li>Stir with a bulldozer. Make sure your bulldozer has been properly disinfected first.</li>
+	  <li>Have an existential crisis. Make sure you're crying in a corner somewhere.</li>
+	  <li>Add Persia. Make sure none of Persia escapes.</li>
+	  <li>Stir until well mixed. Yes, you have committed genocide now, what of it?</li>
+	  <li>Bake for 2,457 years. Serve cold!</li>
+	</ol>
+      </div>
+    </div>
+  </div>
+</body>
