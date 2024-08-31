@@ -195,6 +195,7 @@ h2 { /* ingred/instr headers */
     padding: 24px;
     box-sizing: border-box;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 #Notes h2 {
