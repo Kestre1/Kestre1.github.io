@@ -1,0 +1,28 @@
+{
+    "blueberry": [
+	"oat-bake"
+    ],
+    "oat": [
+	"oat-bake",
+	"granola-overnight-oats"
+    ],
+    "oats": [
+	"oat-bake",
+	"granola-overnight-oats"
+    ],
+    "bake": [
+	"oat-bake"
+    ],
+    "overnight": [
+	"granola-overnight-oats"
+    ],
+    "figs": [
+	"granola-overnight-oats"
+    ],
+    "fig": [
+	"granola-overnight-oats"
+    ],
+    "granola": [
+	"granola-overnight-oats"
+    ]
+}

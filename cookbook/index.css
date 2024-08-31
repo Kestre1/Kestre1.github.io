@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media only screen and (max-width: 450px) {
+    #Heading {
+	font-size: 2.5vw;
+    }
+
+    #RecipeBox {
+	font-size: 3.5vw !important;
+	/* for header only, list is 16px always */
+    }
+
+    .RecipeList {
+	margin-top: 5px;
+    }
+}
+
+#TitleBox {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #fff;
+}
+
+#Heading > h1 {
+    font-family: DM Serif Display;
+    color: #404b25;
+
+    font-size: 5em;
+    text-align: center;
+    line-height: 1.1em;
+}
+
+#Heading > h1 > span:first-child {
+    font-size: 0.6em;
+    display: block;
+    margin-right: 6em;
+    line-height: 1em;
+}
+
+#Heading > h1 > span:last-child {
+    font-size: 0.8em;
+    display: block;
+}
+
+#Search {
+    position: absolute;
+    bottom: 1em;
+    height: auto;
+}
+
+#search-bar {
+    font-family: Montserrat;
+    font-weight: 500;
+    padding: 0.7em 0;
+    border-radius: 100em 0 0 100em;
+    border: 2px solid #222;
+    width: 250px;
+    position: relative;
+    padding-left: 2.7em;
+    font-size: 0.9em;
+}
+
+#search-icon {
+    content: "";
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+    
+    background-image: url(icons/search-svgrepo-com.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0.2em;
+    z-index: 2;
+}
+
+#search-trigger {
+    display: inline-block;
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: #222;
+}
+
+#SearchNew {
+    margin-top: 4em;
+
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.9em;
+
+    height: 2.7em;
+    
+    border: 2px solid #222;
+    border-radius: 100em;
+
+    display: flex;
+}
+
+#search-icon-new {
+    content: "";
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+    margin-left: 0.2em;
+    
+    background-image: url(icons/search-svgrepo-com.svg);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#search-trigger-new {
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    border: none;
+    background-color: transparent;
+    margin-right: 0.2em;
+
+    background-image: url(icons/arrow-left-svgrepo-com.svg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+#search-trigger-new:hover {
+    background-size: 75%;
+    filter: brightness(0);
+    cursor: pointer;
+}
+
+#search-bar-new {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+
+    height: 100%;
+
+    padding: 0;
+    border: none;
+
+    flex-grow: 1;
+}
+
+#search-bar-new::placeholder {
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* Recipes List */
+
+#RecipeBox {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+#RecipeBox > h2 {
+    font-family: DM Serif Display;
+    font-size: 2.5em; /* 2.5em */
+    color: #404b25;
+    margin: 0;
+}
+
+.RecipeList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.RecipeList > li > a {
+    font-family: Montserrat;
+    font-size: 1.15em;
+    color: #303b15;
+    font-weight: 500;
+    text-decoration: none;
+
+    /* manual underline */
+    border-bottom: 1px dashed #303b15;
+    transition: 0.1s;
+}
+
+.RecipeList > li > a:hover {
+    border-bottom: 3px solid;
+}
+
+.RecipeList > li {
+    margin: 6px 0;
+}
+
+#SearchResultsBox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10vw;
+
+    display: none; /* default hidden */
+}
+
+#SearchResultsBox > #ResultCounter {
+    font-family: Raleway;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+/* State change when searching*/
+
+body.searching > #TitleBox {
+    height: auto;
+    flex-direction: row;
+}
+
+body.searching > #TitleBox > #Heading {
+    display: none;
+    animation-name: fade-out-title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+body.searching > #TitleBox > #SearchNew {
+    margin-bottom: 3em;
+
+    width: 80vw;
+    max-width: 800px;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 430px) {
+    /* on mobile, expand the search bar less*/
+    body.searching > #TitleBox > #SearchNew {
+	font-size: 1em;
+	margin-top: 2.5em;
+	margin-bottom: 2em;
+    }
+}
+
+body.searching > #TitleBox > #SearchNew > #search-trigger-new {
+    background-image: url(icons/xmark-svgrepo-com.svg);
+}
+
+body.searching > #RecipeBox {
+    display: none;
+}
+
+body.searching > #SearchResultsBox {
+    display: block;
+}
