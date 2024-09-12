@@ -9,7 +9,7 @@ body {
     margin-left: 5vw;
 }
 
-h1 { /* Recipe Title */
+header > h1 { /* Recipe Title */
     font-family: 'DM Serif Display';
     font-size: 45px;
     color: #404b25;
@@ -18,9 +18,10 @@ h1 { /* Recipe Title */
     line-height: 1;
 }
 
-h3 { /* Recipe Subtitle */
+header > p { /* Recipe Subtitle */
     font-family: 'DM Serif Display';
     font-style: italic;
+    font-weight: 700;
     font-size: 24px;
     color: rgba(80,80,80);
     margin: 0;
@@ -89,19 +90,26 @@ h2 { /* ingred/instr headers */
     text-rendering: optimizeLegibility;
 }
 
-#IngredList, #InstrList {
+h3 { /* ingred sublist headers */
     font-family: Montserrat;
-    font-size: 18px;
+    font-style: italic;
+    font-size: 17px;
+    color: rgb(80,80,80);
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    margin-bottom: -6px;
+    margin-top: 18px;
+}
+
+.IngredList, #InstrList {
+    font-family: Montserrat;
+    font-size: 17px;
     margin: 0;
     margin-left: -10px;
+    margin-top: -5px;
 }
 
-#InstrList {
-    margin-top: -5px; /* compensate top align for wider item spacing */
-    font-size: 17px;
-}
-
-#IngredList > li {
+.IngredList > li {
     margin: 10px 0px;
 }
 
@@ -109,7 +117,7 @@ h2 { /* ingred/instr headers */
     margin: 15px 0px;
 }
 
-#IngredList a { /* NOTE: EXTEND TO INSTRUCTIONSSSSSSSSS */
+.IngredList a { /* NOTE: EXTEND TO INSTRUCTIONSSSSSSSSS */
     font-family: Raleway;
     font-style: italic;
     font-weight: 700;
@@ -120,8 +128,12 @@ h2 { /* ingred/instr headers */
     text-decoration: none;
 }
 
-#IngredList a:hover {
+.IngredList a:hover {
     text-decoration: underline;
+}
+
+.IngredList em, #InstrList em {
+    color: rgba(0,0,0,0.75);
 }
 
 

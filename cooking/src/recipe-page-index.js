@@ -58,14 +58,54 @@ function _render_recipe(recipe) {
     tags[2][1].innerText = recipe["stats"]["inv"] + "/5";
     // servings
     tags[2][2].innerText = recipe["stats"]["srv"][1] + " for " + recipe["stats"]["srv"][0];
-    // Ingredients
-    // clear list first (handle placeholders)
+
+    // Ingredients V2
+    // clear container first (handle placeholders)
     tags[3].textContent = '';
-    for (var ingredItem of recipe["ingred"]) {
-	const newListItem = document.createElement('li');
-	newListItem.innerHTML = format_ingred(ingredItem);
-	tags[3].appendChild(newListItem);
+    // check if ingredient list has categories
+    if (typeof recipe["ingred"][0] == 'string') {  // just a list of regular ingreds
+	console.log('Going!');
+	// create a list for ingredients
+	const ingredList = document.createElement('ul');
+	ingredList.classList.add('IngredList');
+	// populate with ingredients
+	for (var ingredItem of recipe["ingred"]) {
+	    const newListItem = document.createElement('li');
+	    newListItem.innerHTML = format_ingred(ingredItem);
+	    ingredList.appendChild(newListItem);
+	}
+	// append to container
+	tags[3].appendChild(ingredList);
     }
+    else {  // multiple sublists of ingredient categories
+	console.log('Multiple!');
+
+	for (var ingredSublistData of recipe["ingred"]) {
+	    // create header
+	    // (first entry always title of sublist)
+	    if (ingredSublistData[0] != "") {  // if empty string, no header
+		const sublistHeader = document.createElement('h3');
+		sublistHeader.innerText = ingredSublistData[0];
+		tags[3].appendChild(sublistHeader);
+	    }
+	    // whether header or not, remove ingred list header entry
+	    ingredSublistData = ingredSublistData.slice(1);
+	    // create sublist container
+	    const ingredSublist = document.createElement('ul');
+	    ingredSublist.classList.add('IngredList');
+	    // populate with ingredients
+	    for (var ingredItem of ingredSublistData) {
+		const newListItem = document.createElement('li');
+		newListItem.innerHTML = format_ingred(ingredItem);
+		ingredSublist.appendChild(newListItem);
+	    }
+	    // append sublist to container
+	    tags[3].appendChild(ingredSublist);
+	}
+    }
+	    
+	    
+    
     // Instructions
     // clear list first (handle placeholders)
     tags[4].textContent = '';
@@ -75,12 +115,17 @@ function _render_recipe(recipe) {
 	tags[4].appendChild(newListItem);
     }
     // Notes
-    // clear list first (placeholders)
-    tags[5].textContent = '';
-    for (var note of recipe["notes"]) {
-	const newNote = document.createElement('p');
-	newNote.innerText = note;
-	tags[5].appendChild(newNote);
+    if ("notes" in recipe) {
+	// clear list first (placeholders)
+	tags[5].textContent = '';
+	for (var note of recipe["notes"]) {
+	    const newNote = document.createElement('p');
+	    newNote.innerText = note;
+	    tags[5].appendChild(newNote);
+	}
+    } else { // if no notes, remove notes area
+	console.log('removing!');
+	tags[5].parentElement.style.display = 'none';
     }
 }
 
@@ -88,14 +133,14 @@ function get_DOM_tags() {
     /* get_DOM_tags() -> [nameTag, ingredListTag, instrListTag]
        Gets the name, ingredients and instructions tags from HTML
        according to the latest spec (0.0), and returns as list. */
-    const nameTag = document.getElementById('amm_recipe_name');
+    const nameTag = document.getElementById('Name');
     const byTag = document.getElementById('Author');
     // Stats tags
     const dfcTag = document.getElementById('dfc-text');
     const invTag = document.getElementById('inv-text');
     const srvTag = document.getElementById('srv-text');
     // Ingredients, Instructions & Notes tags
-    const ingredTag = document.getElementById('IngredList');
+    const ingredTag = document.getElementById('IngredContainer');
     const instrTag = document.getElementById('InstrList');
     const notesTag = document.getElementById('NotesList');
     return [nameTag, byTag, [dfcTag, invTag, srvTag], ingredTag, instrTag, notesTag];
@@ -129,8 +174,8 @@ function format_ingred(item) {
 	}
     }
 
-    // HANDLE HIGHLIGHTS -- marked by italics (_)
-    const dangerParts = formatted.split('_');
+    // HANDLE HIGHLIGHTS -- marked by double equals (==)
+    const dangerParts = formatted.split('==');
     // if there are no highlights, leave alone
     if (dangerParts.length > 1) {
 	// wipe formatted; entire contents will be concat'ed by dangerParts loop
@@ -148,6 +193,29 @@ function format_ingred(item) {
 	    }
 	    else { // in-md area, highlight text
 		formatted += '<mark>' + dangerPart + '</mark>';
+	    }
+	}
+    }
+
+    // HANDLE ITALICS -- marked by underscore (_)
+    const italParts = formatted.split('_');
+    // if there are no highlights, leave alone
+    if (italParts.length > 1) {
+	// wipe formatted; entire contents will be concat'ed by dangerParts loop
+	formatted = "";
+	// if there are highlights, format
+	for (var [partIndex, italPart] of italParts.entries()) {
+	    if (italPart == "") {
+		continue; // do nothing
+	    }
+	    else if (italPart[0] == " ") {
+		formatted += italPart;
+	    }
+	    else if ((italPart[0] != " ") && (partIndex == 0)) { // first part is plain text
+		formatted += italPart;
+	    }
+	    else { // in-md area, highlight text
+		formatted += '<em>' + italPart + '</em>';
 	    }
 	}
     }
