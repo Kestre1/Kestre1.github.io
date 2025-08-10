@@ -114,6 +114,7 @@ function _render_recipe(recipe) {
 	newListItem.innerHTML = format_ingred(instrItem);
 	tags[4].appendChild(newListItem);
     }
+    
     // Notes
     if ("notes" in recipe) {
 	// clear list first (placeholders)
@@ -121,6 +122,7 @@ function _render_recipe(recipe) {
 	for (var note of recipe["notes"]) {
 	    const newNote = document.createElement('p');
 	    newNote.innerText = note;
+	    newNote.onclick = "unhighlight_self()";
 	    tags[5].appendChild(newNote);
 	}
     } else { // if no notes, remove notes area
@@ -239,6 +241,19 @@ function go_to_note(noteNum) {
        Given the number of a note from their JSON order, highlights
        and scrolls to the note.
        WARNING: Contains reference to DOM tag not encapsulated in spec function!! */
+    /* remove any current highlight */
+    const notes = document.querySelector('#NotesList');
+    if (document.querySelector('#NotesList > p#highlighted') != null) {
+	const currentHighlightNote = document.querySelector('#highlighted');
+	currentHighlightNote.id = "";
+    }
+    /* add new higlight */
     const targetNote = document.querySelector("#NotesList > p:nth-child(" + noteNum + ")");
-    targetNote.classList.add('highlighted');
+    targetNote.id = 'highlighted';
+}
+
+function unhighlight_self(element) {
+    if (element.id = "highlighted") {
+	element.id = "";
+    }
 }

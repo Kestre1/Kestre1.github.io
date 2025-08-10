@@ -76,8 +76,8 @@
 	    "We sometimes add more almond milk in the morning for additional moisture."
 	]
     },
-    "carribean-chicken": {
-	"name": "Carribean Chicken",
+    "caribbean-chicken": {
+	"name": "Caribbean Chicken",
 	"by": "Buk/Fink Family",
 	"stats": {
 	    "dfc": 3,
@@ -90,39 +90,44 @@
 	"ingred": [
 	    [
 		"",
-		"**1** Red Bell Pepper",
+		"**2** Large Red Bell Peppers [1]",
 		"**1** Large Onion",
-		"**1 xxoz Can** Diced Tomatoes",
-		"**1 Tbsp** Chili Powder",
-		"**3** Chicken Breasts",
+		"**1 Can** Diced Tomatoes _(14.5 oz)_",
+		"**2 Tbsp** Chili Powder _(more to taste)_",
+		"**2.5 lbs** Chicken Breast Tenders",
 		"**1 Tbsp** Crushed Garlic",
-		"Olive Oil _(for cooking)_"
+		"**1/4 cup** Olive Oil _(for cooking)_"
 	    ],
 	    [
-		"Marinade for Chicken",
-		"**1/2 tsp** Curry Powder",
-		"**1/2 tsp** Ground Cumin",
-		"**1/2 tsp** Paprika",
-		"**1/2 tsp** Salt",
-		"**1/2 tsp** Black Pepper",
-		"**1/4 tsp** Cinnamon",
-		"**1/4 tsp** Nutmeg",
-		"**1/4 tsp** Cayenne"
+		"Spice Mix for Chicken",
+		"**1 1/2 tsp** Curry Powder",
+		"**1 1/2 tsp** Ground Cumin",
+		"**1 1/2 tsp** Paprika",
+		"**1 1/2 tsp** Black Pepper",
+		"**1 1/4 tsp** Salt",
+		"**3/4 tsp** Cinnamon",
+		"**3/4 tsp** Nutmeg",
+		"**3/4 tsp** Cayenne"
 	    ]
 	],
 	"instr": [
-	    "**Slice red bell pepper** into 1/2-inch wide strips. **Slice onion** into thin rounds.",
-	    "**Heat 1/2 Tbsp olive oil** in a cast iron skillet.",
-	    "**Cook the onion for 2-3 minutes** in the skillet.",
-	    "**Add red bell pepper and chili powder to the skillet** and cook for ?? minutes.",
-	    "**Drain diced tomatoes and add** to skillet.",
-	    "**Cook vegetables until tender.** When finished, ==transfer to a bowl.==",
-	    "==While the vegetables are cooking,== **mix all spices for the marinade.**",
-	    "**Cut up chicken** into 1 inch cubes.",
-	    "**Marinate the chicken** in the spice mix, for ?? amount of time.",
-	    "In the skillet where the vegetables were cooked, **add another 1/2 Tbsp olive oil. Add the garlic** and cook for between 30 secs and 1 min.",
-	    "**Cook the chicken** ==until mostly done.==",
-	    "**Add back the vegetables and cook** until the chicken is completely done."
+	    "**Slice red bell pepper** into 1/2-inch wide strips.",
+	    "**Slice onion** into thin half-rounds.",
+	    "**Heat 2 Tbsp olive oil** in a cast iron skillet.",
+	    "**Cook the onion** until lightly browned in the skillet.",
+	    "**Add red bell pepper, diced tomatoes, and chili powder** to the skillet.",
+	    "**Cook vegetables until mostly tender,** but with a slight crunch. _(If you are cooking the chicken and veggies in the same pan, transfer the veggies to a bowl now.)_",
+	    "**Cut up chicken** into long strips, about 1 inch wide. [2]",
+	    "**Mix all Spice Mix spices** together in a bowl.",
+	    "**Add Spice Mix to chicken and stir** until coated. _(You could marinate the chicken. If you have no life/that sort of time on your hands.)_",
+	    "**In the skillet for the chicken, add 2 Tbsp olive oil** and heat.",
+	    "**Cook the chicken** until halfway done.",
+	    "**==When chicken is halfway done, add garlic==** and stir.",
+	    "**Dump vegetables into chicken skillet and cook** until the chicken is completely done."
+	],
+	"notes": [
+	    "If your bell peppers are small, definitely use three!",
+	    "With the chicken tenders we traditionally got, this meant slicing each tender in half the long way."
 	]
     }
 }

@@ -117,7 +117,7 @@ h3 { /* ingred sublist headers */
     margin: 15px 0px;
 }
 
-.IngredList a { /* NOTE: EXTEND TO INSTRUCTIONSSSSSSSSS */
+.IngredList a, #InstrList a {
     font-family: Raleway;
     font-style: italic;
     font-weight: 700;
@@ -128,7 +128,7 @@ h3 { /* ingred sublist headers */
     text-decoration: none;
 }
 
-.IngredList a:hover {
+.IngredList a:hover, #InstrList a:hover {
     text-decoration: underline;
 }
 
@@ -222,12 +222,12 @@ h3 { /* ingred sublist headers */
     line-height: 1.4;
 }
 
-#Notes p.highlighted {
+#Notes p#highlighted {
     font-weight: 500;
     position: relative;
 }
 
-#Notes p.highlighted::after {
+#Notes p#highlighted::after {
     content: "";
     position: absolute;
     width: calc(100% + 8px);
