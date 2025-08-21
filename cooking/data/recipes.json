@@ -12,24 +12,24 @@
 	},
 	"ingred": [
 	    "**4 Cups** Rolled Oats",
-	    "**1/3 Cup** Lightly Crushed Nuts [2]",
+	    "**⅓ Cup** Lightly Crushed Nuts [2]",
 	    "More nuts, for garnish [3]",
 	    "**1 tsp** Salt _(eyeballed)_",
-	    "**1/2 tsp** Cinammon _(eyeballed)_",
+	    "**½ tsp** Cinnamon _(eyeballed)_",
 	    "**3 Cups** Milk _(or more)_",
-	    "**1 1/2 Cups** Water [4]",
+	    "**1½ Cups** Water [4]",
 	    "**5 Tbsp** Maple Syrup [5]",
 	    "**2 tsp** Vanilla Extract _(eyeballed)_",
-	    "**1/4 Cup** Chia Seeds",
+	    "**¼ Cup** Chia Seeds",
 	    "**1-2 Cups** Frozen Blueberries",
 	    "**1 bag** Frozen Peaches"
 	],
 	"instr": [
 	    "**Preheat** oven to ==350°F.==",
-	    "**Grease a large baking dish.** _(Optional -- it will still work without greasing)_",
+	    "**Grease a large baking dish.** _(Optional — it will still work without greasing)_",
 	    "**Cook frozen peaches:** Put frozen peaches into a lidded pot. Cover and cook on high until the ice on the peaches has melted and is pooling in the bottom. No need to stir.",
 	    "**Cook frozen peaches (cont):** Lower the heat to medium and uncover. Cook until the peaches are soft and breakable with a spoon, but not fully carmelized/cooked, then turn off.",
-	    "**Choose 1/3 cup of your preferred nuts.** If they are large, crush them slightly in your hands so they are smaller pieces.",
+	    "**Choose ⅓ cup of your preferred nuts.** If they are large, crush them slightly in your hands so they are smaller pieces.",
 	    "**Stir all ingredients together in a bowl,** except the nuts for garnish. Order doesn't matter. After stirring, the mixture should be a uniform color. The frozen blueberries will melt, that's fine. _(Hint: this mixture is vegan. You have a stirring spoon. The stirring spoon can go in your mouth.)_",
 	    "**Pour batter into the large baking dish.** It will be liquidy and form piles of oats while free moisture pools at the side. Spread with a spoon or spatula until the level of batter is flat and reaches the edges of the dish.",
 	    "**Sprinkle garnish nuts over the top.** If they are especially large, consider pressing them into the batter slightly.",
@@ -37,8 +37,8 @@
 	],
 	"notes": [
 	    "This is our Spring/Summer oat bake. For Fall and Winter flavors see other variants: Blueberry Pear Oat Bake and Winter Kitchen Sink Oat Bake.",
-	    "All quantities are approximate! Eyeball and mess around--the only way to really ruin it is to put in not enough liquid.",
-	    "Nuts -- any will do for the batter. We like almonds (whole or sliced), walnuts & pecans.",
+	    "All quantities are approximate! Eyeball and mess around — the only way to really ruin it is to put in not enough liquid.",
+	    "Nuts — any will do for the batter. We like almonds (whole or sliced), walnuts & pecans.",
 	    "We like sliced almonds and coconut for the top. Walnuts, pecans and whole almonds get burnt and bitter sometimes.",
 	    "We tend to like doing some extra water and milk for more moisture.",
 	    "Maple Syrup -- Feel free to let it overflow the tablespoon as measuring ;)"
@@ -96,22 +96,22 @@
 		"**2 Tbsp** Chili Powder _(more to taste)_",
 		"**2.5 lbs** Chicken Breast Tenders",
 		"**1 Tbsp** Crushed Garlic",
-		"**1/4 cup** Olive Oil _(for cooking)_"
+		"**¼ cup** Olive Oil _(for cooking)_"
 	    ],
 	    [
 		"Spice Mix for Chicken",
-		"**1 1/2 tsp** Curry Powder",
-		"**1 1/2 tsp** Ground Cumin",
-		"**1 1/2 tsp** Paprika",
-		"**1 1/2 tsp** Black Pepper",
-		"**1 1/4 tsp** Salt",
-		"**3/4 tsp** Cinnamon",
-		"**3/4 tsp** Nutmeg",
-		"**3/4 tsp** Cayenne"
+		"**1½ tsp** Curry Powder",
+		"**1½ tsp** Ground Cumin",
+		"**1½ tsp** Paprika",
+		"**1½ tsp** Black Pepper",
+		"**1¼ tsp** Salt",
+		"**¾ tsp** Cinnamon",
+		"**¾ tsp** Nutmeg",
+		"**¾ tsp** Cayenne"
 	    ]
 	],
 	"instr": [
-	    "**Slice red bell pepper** into 1/2-inch wide strips.",
+	    "**Slice red bell pepper** into ½-inch wide strips.",
 	    "**Slice onion** into thin half-rounds.",
 	    "**Heat 2 Tbsp olive oil** in a cast iron skillet.",
 	    "**Cook the onion** until lightly browned in the skillet.",
@@ -128,6 +128,93 @@
 	"notes": [
 	    "If your bell peppers are small, definitely use three!",
 	    "With the chicken tenders we traditionally got, this meant slicing each tender in half the long way."
+	]
+    },
+    "nicks-fries": {
+	"name": "Nick's Fries",
+	"by": "Cedrus",
+	"stats": {
+	    "dfc": 2,
+	    "inv": 2,
+	    "srv": [
+		4,
+		"Side"
+	    ]
+	},
+	"ingred": [
+	    [
+		"Fries",
+		"**3** Medium Russet Potatoes [2]",
+		"**2 tsp** Paprika _(or enough to coat)_",
+		"**2 Tbsp** Olive Oil _(or enough to coat)_"
+	    ],
+	    [
+		"Sauce",
+		"**4** Green Onions, chopped",
+		"**1 Medium-Large Wedge** Red Onion, minced [4]",
+		"**¼ Cup** Fresh Parsley, chopped",
+		"**1 Tbsp** Minced Garlic",
+		"**½** Lemon, squeezed",
+		"**5 Tbsp** Mayo",
+		"**2 Tbsp** Olive Oil _(very roughly)_",
+		"**½ Tbsp** Dried Dill",
+		"**1 tsp** Dijon Mustard",
+		"**½ tsp** Dried Oregano",
+		"**½ tsp** Dried Thyme",
+		"**10 Grinds** Black Pepper"
+	    ],
+	    [
+		"Optional",
+		"Crumbled Feta, _for garnish_"
+	    ]
+	],
+	"instr": [
+	    "**FRIES:** ==**Preheat Oven on Convection Bake** to 400°F.==",
+	    "**Wash potatoes.** With a **mandolin, slice potatoes into fry shapes.** _(On our mandolin, that's the 'Thick Julienne 7mm' setting.)_",
+	    "**Toss potatoes with paprika** until coated.",
+	    "**Toss potatoes with olive oil** until coated.",
+	    "**Arrange potatoes on two baking trays** as close to a single layer, and with gaps between each fry, as possible _in about 2 minutes or less._",
+	    "**Bake potatoes for ==20 mins,==** until golden-brown _(and preferably not crunchy)._[3]",
+	    "**SAUCE & ASSEMBLY:** In a large bowl, **mix all sauce ingredients together.**",
+	    "**Add the fries to bowl with the sauce, and stir** until well-coated."
+	],
+	"notes": [
+	    "All of these quantities are _extremely_ approximate. The point is to have flavor, and lots of it.",
+	    "Or a moderate buttload of red potatoes. If you enjoy pain.",
+	    "For baking the fries: If not using a silpat or parchment on baking trays, consider checking sooner.",
+	    "About ⅕ of a red onion. Honestly, just whatever feels good to you.",
+	    "To make the process more efficient, since the mandolin needs to be cleared out frequently, move the freshly-cut fries to a large bowl. Once the fries are baking, this bowl can be reused to make the sauce, and then reused again to combine the sauce and the cooked fries."
+	]
+    },
+    "chicory-spring-salad": {
+	"name": "Chicory & Pine Nut Spring Salad",
+	"by": "Buk/Fink Family",
+	"stats": {
+	    "dfc": 1,
+	    "inv": 2,
+	    "srv": [
+		4,
+		"Salad/Side"
+	    ]
+	},
+	"ingred": [
+	    [
+		"",
+		"**1 Box** Baby Spring Mix",
+		"**2 Heads** Chicory Endive",
+		"**about ⅓ Cup** Raw Pine Nuts"
+	    ],
+	    [
+		"Dressing",
+		"**⅓ Cup** Olive Oil",
+		"**⅓ Cup** Apple Cider Vinegar",
+		"**2 tsp** Brown Sugar _(light or dark_)"
+	    ]
+	],
+	"instr": [
+	    "**Chop chicory** into ½-inch pieces.",
+	    "**Whisk together the dressing.**",
+	    "**Combine everything** in a salad bowl."
 	]
     }
 }

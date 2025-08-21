@@ -30,5 +30,32 @@
     ],
     "chicken": [
         "caribbean-chicken"
-    ]	
+    ],
+    "nick": [
+	"nicks-fries"
+    ],
+    "fries": [
+	"nicks-fries"
+    ],
+    "potatoes": [
+	"nicks-fries"
+    ],
+    "chicory": [
+	"chicory-spring-salad"
+    ],
+    "spring": [
+	"chicory-spring-salad"
+    ],
+    "mix": [
+	"chicory-spring-salad"
+    ],
+    "pine": [
+	"chicory-spring-salad"
+    ],
+    "nut": [
+	"chicory-spring-salad"
+    ],
+    "salad": [
+	"chicory-spring-salad"
+    ]
 }
